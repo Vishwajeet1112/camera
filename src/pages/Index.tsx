@@ -5,6 +5,10 @@ import { Services } from "@/components/site/Services";
 import { Gallery } from "@/components/site/Gallery";
 import { Testimonials } from "@/components/site/Testimonials";
 import { Urgency } from "@/components/site/Urgency";
+<<<<<<< HEAD
+=======
+import { Booking } from "@/components/site/Booking";
+>>>>>>> b1836df (first commit)
 import { Contact } from "@/components/site/Contact";
 import { Footer } from "@/components/site/Footer";
 import { FloatingActions } from "@/components/site/FloatingActions";
@@ -39,6 +43,10 @@ const Index = () => {
         <Gallery />
         <Testimonials />
         <Urgency />
+<<<<<<< HEAD
+=======
+        <Booking />
+>>>>>>> b1836df (first commit)
         <Contact />
       </main>
       <Footer />

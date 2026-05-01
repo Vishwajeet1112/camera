@@ -6,12 +6,15 @@ import g3 from "@/assets/gallery-3.jpg";
 import g4 from "@/assets/gallery-4.jpg";
 import g5 from "@/assets/gallery-5.jpg";
 import g6 from "@/assets/gallery-6.jpg";
+<<<<<<< HEAD
 import i1 from "@/assets/1.jpg";
 import i2 from "@/assets/2.jpg";
 import i3 from "@/assets/3.jpg";
 import i4 from "@/assets/4.jpg";
 // import i5 from "@/assets/IMG_1103.JPG";
 
+=======
+>>>>>>> b1836df (first commit)
 
 const images = [
   { src: g2, alt: "Bridal portrait", span: "row-span-2" },
@@ -20,6 +23,7 @@ const images = [
   { src: g5, alt: "Camera shop interior", span: "row-span-2" },
   { src: g4, alt: "Newborn photography", span: "" },
   { src: g6, alt: "Pre-wedding silhouette", span: "" },
+<<<<<<< HEAD
   
    { src: i1, alt: "Wedding shoot", span: "" },
   { src: i2, alt: "Event photography", span: "" },
@@ -27,6 +31,8 @@ const images = [
   { src: i4, alt: "Professional shoot", span: "" },
   // { src: i5, alt: "Client project", span: "" },
 
+=======
+>>>>>>> b1836df (first commit)
 ];
 
 export const Gallery = () => {
