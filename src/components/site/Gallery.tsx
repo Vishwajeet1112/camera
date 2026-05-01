@@ -1,20 +1,17 @@
 import { useState } from "react";
 import { X } from "lucide-react";
+
 import g1 from "@/assets/gallery-1.jpg";
 import g2 from "@/assets/gallery-2.jpg";
 import g3 from "@/assets/gallery-3.jpg";
 import g4 from "@/assets/gallery-4.jpg";
 import g5 from "@/assets/gallery-5.jpg";
 import g6 from "@/assets/gallery-6.jpg";
-<<<<<<< HEAD
+
 import i1 from "@/assets/1.jpg";
 import i2 from "@/assets/2.jpg";
 import i3 from "@/assets/3.jpg";
 import i4 from "@/assets/4.jpg";
-// import i5 from "@/assets/IMG_1103.JPG";
-
-=======
->>>>>>> b1836df (first commit)
 
 const images = [
   { src: g2, alt: "Bridal portrait", span: "row-span-2" },
@@ -23,16 +20,11 @@ const images = [
   { src: g5, alt: "Camera shop interior", span: "row-span-2" },
   { src: g4, alt: "Newborn photography", span: "" },
   { src: g6, alt: "Pre-wedding silhouette", span: "" },
-<<<<<<< HEAD
-  
-   { src: i1, alt: "Wedding shoot", span: "" },
+
+  { src: i1, alt: "Wedding shoot", span: "" },
   { src: i2, alt: "Event photography", span: "" },
   { src: i3, alt: "Camera showcase", span: "" },
   { src: i4, alt: "Professional shoot", span: "" },
-  // { src: i5, alt: "Client project", span: "" },
-
-=======
->>>>>>> b1836df (first commit)
 ];
 
 export const Gallery = () => {
@@ -41,6 +33,8 @@ export const Gallery = () => {
   return (
     <section id="gallery" className="relative section-pad">
       <div className="container-luxe">
+
+        {/* 🔥 Heading */}
         <div className="flex flex-wrap items-end justify-between gap-6 mb-14">
           <div className="max-w-xl">
             <div className="eyebrow mb-4">Frames We're Proud Of</div>
@@ -53,6 +47,7 @@ export const Gallery = () => {
           </p>
         </div>
 
+        {/* 🔥 Grid */}
         <div className="grid grid-cols-2 md:grid-cols-3 auto-rows-[200px] md:auto-rows-[260px] gap-4">
           {images.map((img, i) => (
             <button
@@ -66,27 +61,34 @@ export const Gallery = () => {
                 loading="lazy"
                 className="absolute inset-0 h-full w-full object-cover transition-transform duration-700 group-hover:scale-110"
               />
-              <div className="absolute inset-0 bg-gradient-to-t from-background/80 via-transparent to-transparent opacity-60 group-hover:opacity-90 transition-opacity" />
+
+              {/* Overlay */}
+              <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-transparent to-transparent opacity-60 group-hover:opacity-90 transition" />
+
+              {/* Text */}
               <div className="absolute bottom-4 left-4 right-4 translate-y-2 opacity-0 group-hover:translate-y-0 group-hover:opacity-100 transition-all">
-                <div className="font-display text-lg text-foreground">{img.alt}</div>
+                <div className="font-display text-lg text-white">
+                  {img.alt}
+                </div>
               </div>
             </button>
           ))}
         </div>
       </div>
 
+      {/* 🔥 Modal Preview */}
       {active && (
         <div
           onClick={() => setActive(null)}
-          className="fixed inset-0 z-[100] flex items-center justify-center bg-background/95 backdrop-blur-xl p-6 animate-fade-in"
+          className="fixed inset-0 z-[100] flex items-center justify-center bg-black/95 backdrop-blur-xl p-6 animate-fade-in"
         >
           <button
             onClick={() => setActive(null)}
             className="absolute top-6 right-6 h-11 w-11 rounded-full glass flex items-center justify-center hover:border-gold/50"
-            aria-label="Close"
           >
-            <X className="h-5 w-5" />
+            <X className="h-5 w-5 text-white" />
           </button>
+
           <img
             src={active}
             alt="Preview"

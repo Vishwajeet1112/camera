@@ -5,10 +5,7 @@ import { Services } from "@/components/site/Services";
 import { Gallery } from "@/components/site/Gallery";
 import { Testimonials } from "@/components/site/Testimonials";
 import { Urgency } from "@/components/site/Urgency";
-<<<<<<< HEAD
-=======
-import { Booking } from "@/components/site/Booking";
->>>>>>> b1836df (first commit)
+import { Booking } from "@/components/site/Booking"; // ✅ KEEP THIS
 import { Contact } from "@/components/site/Contact";
 import { Footer } from "@/components/site/Footer";
 import { FloatingActions } from "@/components/site/FloatingActions";
@@ -28,14 +25,23 @@ const Index = () => {
       postalCode: "846004",
       addressCountry: "IN",
     },
-    aggregateRating: { "@type": "AggregateRating", ratingValue: "4.8", reviewCount: "500" },
+    aggregateRating: {
+      "@type": "AggregateRating",
+      ratingValue: "4.8",
+      reviewCount: "500",
+    },
     priceRange: "₹₹",
   };
 
   return (
     <div className="relative min-h-screen bg-background text-foreground overflow-x-hidden">
-      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }} />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
+      />
+
       <Header />
+
       <main>
         <Hero />
         <TrustBar />
@@ -43,12 +49,10 @@ const Index = () => {
         <Gallery />
         <Testimonials />
         <Urgency />
-<<<<<<< HEAD
-=======
-        <Booking />
->>>>>>> b1836df (first commit)
+        <Booking /> {/* ✅ SHOW BOOKING */}
         <Contact />
       </main>
+
       <Footer />
       <FloatingActions />
     </div>

@@ -1,9 +1,5 @@
 import { useEffect, useState } from "react";
-<<<<<<< HEAD
-import { Phone, Camera } from "lucide-react";
-=======
 import { Phone } from "lucide-react";
->>>>>>> b1836df (first commit)
 import logo from "@/assets/logo.png";
 
 const links = [
@@ -11,10 +7,7 @@ const links = [
   { href: "#gallery", label: "Gallery" },
   { href: "#testimonials", label: "Reviews" },
   { href: "#contact", label: "Contact" },
-<<<<<<< HEAD
-=======
-  { href: "#booking", label: "Book Now" }, // ✅ FIXED
->>>>>>> b1836df (first commit)
+  // { href: "#booking", label: "Book Now" },
 ];
 
 export const Header = () => {
@@ -40,66 +33,35 @@ export const Header = () => {
           }`}
         >
 
-<<<<<<< HEAD
-          {/* ✅ Logo Section */}
-=======
           {/* 🔥 Logo */}
->>>>>>> b1836df (first commit)
           <a href="/" className="flex items-center gap-2.5 group">
             <img
               src={logo}
               alt="Roshan Cemara"
-<<<<<<< HEAD
-              className="flex items-center justify-center w-12 h-12 rounded-full"
-            />
-
-            {/* <span className="relative flex h-9 w-9 items-center justify-center rounded-full gradient-gold shadow-gold">
-              <Camera className="h-4 w-4 text-primary-foreground" strokeWidth={2.5} />
-            </span> */}
-
-=======
               className="w-12 h-12 rounded-full object-cover group-hover:scale-110 transition"
             />
->>>>>>> b1836df (first commit)
             <span className="font-display text-xl tracking-wide">
               Roshan <span className="text-gradient-gold">Cemara</span>
             </span>
           </a>
 
-<<<<<<< HEAD
-          {/* ✅ Navigation */}
-=======
           {/* 🔥 Nav Links */}
->>>>>>> b1836df (first commit)
           <nav className="hidden md:flex items-center gap-8">
             {links.map((l) => (
               <a
                 key={l.href}
                 href={l.href}
-<<<<<<< HEAD
-                className="text-sm text-muted-foreground hover:text-gold transition-colors relative after:content-[''] after:absolute after:left-0 after:-bottom-1 after:h-px after:w-0 after:bg-gold after:transition-all hover:after:w-full"
-=======
                 className={`text-sm transition relative after:content-[''] after:absolute after:left-0 after:-bottom-1 after:h-px after:w-0 after:bg-gold after:transition-all hover:after:w-full ${
                   l.label === "Book Now"
                     ? "text-gold font-semibold"
                     : "text-muted-foreground hover:text-gold"
                 }`}
->>>>>>> b1836df (first commit)
               >
                 {l.label}
               </a>
             ))}
           </nav>
 
-<<<<<<< HEAD
-          {/* ✅ Call Button */}
-          <a
-            href="tel:+917543994305"
-            className="inline-flex items-center gap-2 rounded-full gradient-gold px-4 md:px-5 py-2.5 text-sm font-medium text-primary-foreground shadow-gold hover:scale-105 transition-transform"
-          >
-            <Phone className="h-4 w-4" />
-            <span className="hidden sm:inline">Call Now</span>
-=======
           {/* 🔥 CTA Button */}
           <a
             href="#booking"
@@ -107,7 +69,6 @@ export const Header = () => {
           >
             <Phone className="h-4 w-4" />
             Book Now
->>>>>>> b1836df (first commit)
           </a>
 
         </div>

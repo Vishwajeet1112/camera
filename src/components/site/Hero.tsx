@@ -39,11 +39,7 @@ export const Hero = () => {
             >
               <Phone className="h-5 w-5" />
               Call Now
-<<<<<<< HEAD
-              <span className="opacity-80">+91 75439 94305</span>
-=======
               {/* <span className="opacity-80">+91 75439 94305</span> */}
->>>>>>> b1836df (first commit)
             </a>
             <a
               href="#services"

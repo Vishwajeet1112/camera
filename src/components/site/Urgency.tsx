@@ -4,13 +4,6 @@ export const Urgency = () => {
   return (
     <section className="relative section-pad">
       <div className="container-luxe">
-<<<<<<< HEAD
-        <div className="relative overflow-hidden rounded-[2.5rem] border border-gold/30 p-10 md:p-16">
-          <div className="absolute inset-0 gradient-gold opacity-[0.08]" />
-          <div
-            className="absolute -top-32 -right-32 h-96 w-96 rounded-full blur-3xl"
-            style={{ background: "radial-gradient(circle, hsl(var(--gold)/0.4), transparent 70%)" }}
-=======
         <div
           className="group relative overflow-hidden rounded-[30px] border border-gold/30 p-12 md:p-20 animate-fade-up transition-shadow duration-500 hover:shadow-[0_0_80px_-10px_hsl(var(--gold)/0.5)]"
           style={{ background: "linear-gradient(135deg, #000000, #1a1a1a, #2a1f0f)" }}
@@ -22,7 +15,6 @@ export const Urgency = () => {
           <div
             className="absolute -bottom-40 -left-20 h-96 w-96 rounded-full blur-3xl opacity-40"
             style={{ background: "radial-gradient(circle, hsl(var(--gold)/0.25), transparent 70%)" }}
->>>>>>> b1836df (first commit)
           />
           <div className="relative grid md:grid-cols-[1.4fr_1fr] gap-10 items-center">
             <div>
@@ -33,22 +25,12 @@ export const Urgency = () => {
                 Book today, get <em className="text-gradient-gold not-italic">10% off</em> your first shoot.
               </h2>
               <p className="text-muted-foreground text-lg max-w-xl">
-<<<<<<< HEAD
-                Walk in this week or call us — exclusive monsoon offers on photography packages and camera accessories.
-=======
                 Walk in this week or call us — exclusive offers on photography packages and camera accessories.
->>>>>>> b1836df (first commit)
               </p>
             </div>
             <div className="flex md:justify-end">
               <a
                 href="tel:+917543994305"
-<<<<<<< HEAD
-                className="group inline-flex items-center gap-3 rounded-full gradient-gold px-8 py-5 font-medium text-primary-foreground shadow-gold hover:scale-105 transition-transform"
-              >
-                <Phone className="h-5 w-5" />
-                Book Now — +91 75439 94305
-=======
                 className="relative inline-flex items-center gap-3 overflow-hidden rounded-full gradient-gold px-8 py-5 font-medium text-primary-foreground shadow-gold transition-transform duration-300 hover:scale-105"
               >
                 <span
@@ -57,7 +39,6 @@ export const Urgency = () => {
                 />
                 <Phone className="h-5 w-5 relative" />
                 <span className="relative">Book Now </span>
->>>>>>> b1836df (first commit)
               </a>
             </div>
           </div>
